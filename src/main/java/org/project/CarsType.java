@@ -6,11 +6,15 @@ public class CarsType {
     private String carBrand;
     private Double weightCar;
     private Integer carMileage;
+    private Boolean carAvailability;
+    private Double carGPS;
 
-    public CarsType(String carBrand, Double weightCar, Integer carMileage) {
+    public CarsType(String carBrand, Double weightCar, Integer carMileage, Boolean carAvailability, Double carGPS) {
         this.carBrand = carBrand;
         this.weightCar = weightCar;
         this.carMileage = carMileage;
+        this.carAvailability = carAvailability;
+        this.carGPS = carGPS;
     }
 
     public String getCarBrand() {
@@ -37,5 +41,19 @@ public class CarsType {
         this.carMileage = carMileage;
     }
 
+    public Boolean getCarAvailability() {
+        return carAvailability;
+    }
 
+    public void setCarAvailability(Boolean carAvailability) {
+        this.carAvailability = carAvailability;
+    }
+
+    public Double getCarGPS() {
+        return carGPS;
+    }
+
+    public void setCarGPS(Double carGPS) {
+        this.carGPS = carGPS;
+    }
 }

@@ -4,8 +4,18 @@ import org.project.typeCars.Car;
 
 public class Renault extends Car {
 
-    public Renault(String carBrand, Double weightCar, Integer carMileage) {
-        super(carBrand, weightCar, carMileage);
+    public Renault(String carBrand, Double weightCar, Integer carMileage, Boolean carAvailability, Double carGPS) {
+        super(carBrand, weightCar, carMileage, carAvailability, carGPS);
+    }
+
+    @Override
+    public void setCarAvailability(Boolean carAvailability) {
+        super.setCarAvailability(carAvailability);
+    }
+
+    @Override
+    public void setCarGPS(Double carGPS) {
+        super.setCarGPS(carGPS);
     }
 
     @Override

@@ -3,8 +3,9 @@ package org.project.typeCars;
 import org.project.CarsType;
 
 public class Truck extends CarsType {
-    public Truck(String carBrand, Double weightCar, Integer carMileage) {
-        super(carBrand, weightCar, carMileage);
+
+    public Truck(String carBrand, Double weightCar, Integer carMileage, Boolean carAvailability, Double carGPS) {
+        super(carBrand, weightCar, carMileage, carAvailability, carGPS);
     }
 
     @Override
@@ -15,6 +16,16 @@ public class Truck extends CarsType {
     @Override
     public void setWeightCar(Double weightCar) {
         super.setWeightCar(weightCar);
+    }
+
+    @Override
+    public void setCarAvailability(Boolean carAvailability) {
+        super.setCarAvailability(carAvailability);
+    }
+
+    @Override
+    public void setCarGPS(Double carGPS) {
+        super.setCarGPS(carGPS);
     }
 
     @Override
